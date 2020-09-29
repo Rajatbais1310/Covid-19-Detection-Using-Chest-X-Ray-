@@ -1,0 +1,85 @@
+{% extends "base.html" %} {% block content %}
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    
+    <div class="w3-content" style="max-width:2000px;margin-top:46px">
+        <div class="mySlides w3-display-container w3-center">
+                <img src="assets/images/coronavirus.jpg" style="width:100%">
+                <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
+                  <h3>Coronavirus</h3>  
+                </div>
+              </div>
+              
+              
+        </div>
+    </div>
+    
+</body>
+<h2></h2>
+<br>
+<br>
+<br>
+<center>
+    <center>
+        <h2 style="color:red;">Upload Your Chest X-ray</h2>
+    </center>
+<div>
+    <form id="upload-file" method="post" enctype="multipart/form-data">
+        <label for="imageUpload" class="upload-label">
+            Select Image
+        </label>
+        <input type="file" name="file" id="imageUpload" accept=".png, .jpg, .jpeg">
+    </form>
+
+    <div class="image-section" style="display:none;">
+        <div class="img-preview">
+            <div id="imagePreview">
+            </div>
+        </div>
+        <div>
+            <button type="button" class="btn btn-primary btn-lg " id="btn-predict">Predict!</button>
+        </div>
+    </div>
+
+    <div class="loader" style="display:none;"></div>
+
+    <h3 id="result">
+        <span> </span>
+    </h3>
+
+</div>
+</center>
+<br>
+<br>
+<br>
+<br>
+
+    <body>
+        NOTES
+        <ul>
+        <li>Clean your hands often. Use soap and water, or an alcohol-based hand rub.</li>
+        <li>Maintain a safe distance from anyone who is coughing or sneezing.</li>
+        <li>Wear a mask when physical distancing is not possible.</li>
+        <li>Don’t touch your eyes, nose or mouth.</li>
+        <li>Cover your nose and mouth with your bent elbow or a tissue when you cough or sneeze.</li>
+        <li>Stay home if you feel unwell.</li>
+        <li>If you have a fever, cough and difficulty breathing, seek medical attention.</li>
+        </ul>
+        </body>
+    
+</body>
+
+</body>
+<body>  
+    <center>
+        <footer class="w3-center w3-black w3-padding-16">
+            <p> <a href="https://www.linkedin.com/in/amey-didolkar-ba1490140/" title="© copyright 2020 by A.S.Didolkar" target="_blank" class="w3-hover-text-green">© copyright 2020 by Developer - A.S.Didolkar</a></p>
+        </footer>
+    </center>
+</body>
+{% endblock %}
